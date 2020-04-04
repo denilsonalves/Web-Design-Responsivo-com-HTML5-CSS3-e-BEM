@@ -1,0 +1,37 @@
+/* * {
+  box-sizing: border-box;
+} ---> deixa o box-sizing como border-box padrão       */
+
+body {
+  margin: 0;
+  font-size: 18px;
+}
+
+.frase1,
+.frase2,
+.referencia {
+  text-align: justify;
+  width: 500px;
+  background-color: cadetblue;
+}
+
+p {
+  margin: 10px;
+}
+
+.referencia {
+  background-color: black;
+  height: 20px;
+}
+
+.frase1 {
+  box-sizing: content-box;
+  padding: 20px;
+  border: 3px solid red;
+}
+
+.frase2 {
+  box-sizing: border-box;
+  border: 3px solid red;
+  padding: 20px;
+}

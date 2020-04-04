@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  font-size: 18px;
+}
+
+.frase1,
+.frase2 {
+  text-align: justify;
+  width: 400px;
+  border: 3px solid red;
+  background-color: cadetblue;
+
+  padding: 20px;
+}
+
+.frase1 {
+  margin-left: 200px;
+}
