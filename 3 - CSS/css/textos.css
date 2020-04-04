@@ -1,0 +1,20 @@
+#titulo {
+  color: #ffaabb;
+  font-size: 36px;
+  text-align: center;
+}
+
+.destaque {
+  color: #f00;
+  font-size: 24px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  text-align: left;
+}
+
+.missao {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  text-align: right;
+}
