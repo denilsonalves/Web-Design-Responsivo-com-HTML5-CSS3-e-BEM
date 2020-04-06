@@ -1,0 +1,36 @@
+.layout-cabecalho {
+  height: 60px;
+  /* border-bottom: 1px solid #000; */
+}
+
+.layout-cabecalho img {
+  margin-top: 10px;
+}
+
+.layout-planos {
+  padding: 40px 0;
+}
+
+.layout-planos::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.layout-principal {
+  padding: 40px 0;
+  background-color: thistle;
+}
+
+.layout-depoimento {
+  padding: 40px 0;
+  background-color: beige;
+}
+
+.layout-rodape {
+  padding: 40px 0;
+  background-color: #484848;
+
+  color: #fff;
+  text-align: center;
+}
