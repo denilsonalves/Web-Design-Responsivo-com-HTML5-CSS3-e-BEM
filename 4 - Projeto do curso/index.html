@@ -1,119 +1,182 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fernanda Graziella</title>
 
-    <link rel="stylesheet" href="css/bootstrap-grid.css" />
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/componentes.css" />
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
-  </head>
-  <body>
-    <header class="layout-cabecalho">
-      <div class="container">
-        <img
-          src="imagens/e - Copia (3).png"
-          alt="Salão Fernanda Graziella"
-          width="200"
-        />
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fernanda Graziella</title>
 
-    <section class="layout-principal">
-      <div class="container">
-        <div class="principal">
-          <h1 class="principal__titulo">
-            Mulheres mais que <strong>perfeitas</strong>
-          </h1>
+  <link rel="stylesheet" href="css/bootstrap-grid.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/componentes.css" />
+  <link rel="stylesheet" href="css/slider.css" />
 
-          <p class="principal__subtitulo">
-            Transformando sua beleza indiscutível
-          </p>
+  <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
+</head>
 
-          <div class="principal__acao">
-            <a href="#planos" class="botao">Conheça os planos</a>
-          </div>
+<body>
+  <header class="layout-cabecalho layout-cabecalho--home">
+    <div class="container">
+
+      <nav class="navegacao">
+        <img src="imagens/logo.png" alt="Salão Fernanda Graziella" width="200" />
+
+        <div class="navegacao__menu">
+          <button class="botao-chaveador js-botao-menu"></button>
+
+          <ul class="menu menu--toggle js-menu">
+            <li class="menu__item">
+              <a href="#">Como funciona</a>
+            </li>
+            <li class="menu__item">
+              <a href="#planos">Planos e preços</a>
+            </li>
+            <li class="menu__item">
+              <a href="#">Contato</a>
+            </li>
+            <li class="menu__item menu__item--botao">
+              <a href="#" class="botao botao--login">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="layout-principal">
+    <div class="container">
+      <div class="principal">
+        <h1 class="principal__titulo">
+          Mulheres mais que <strong>perfeitas</strong>
+        </h1>
+
+        <p class="principal__subtitulo">
+          Transformando sua beleza indiscutível
+        </p>
+
+        <div class="principal__acao">
+          <a href="#planos" class="botao">Conheça os planos</a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <div class="layout-depoimento">
-      <div class="container">
-        <div class="depoimento">
-          <blockquote>
-            "Estou totalmente satisfeita com os serviço que realizei e continuo
-            realizando no Salão Fernanda Graziella. Indico cegamente!!!"
-          </blockquote>
-
-          <div class="depoimento__autor">
-            <img src="imagens/maria-joaquina.jpg" alt="Maria Joaquina" />
-            <p>Maria Joaquina</p>
+  <div class="layout-apre">
+    <div class="container">
+      <div class="outer-wrapper">
+        <div class="s-wrap s-type-1" role="slider">
+          <input type="radio" id="s-1" name="slider-control" checked="checked" />
+          <input type="radio" id="s-2" name="slider-control" />
+          <input type="radio" id="s-3" name="slider-control" />
+          <input type="radio" id="s-4" name="slider-control" />
+          <!--  <input type="radio" id="s-5" name="slider-control" /> -->
+          <ul class="s-content">
+            <li class="s-item s-item-1"></li>
+            <li class="s-item s-item-2"></li>
+            <li class="s-item s-item-3"></li>
+            <li class="s-item s-item-4"></li>
+            <!--   <li class="s-item s-item-5"></li> -->
+          </ul>
+          <div class="s-control">
+            <label class="s-c-1" for="s-1"></label>
+            <label class="s-c-2" for="s-2"></label>
+            <label class="s-c-3" for="s-3"></label>
+            <label class="s-c-4" for="s-4"></label>
+            <!--  <label class="s-c-5" for="s-5"></label> -->
+          </div>
+          <div class="s-nav">
+            <label class="s-nav-1 right" for="s-2"></label>
+            <label class="s-nav-2 left" for="s-1"></label>
+            <label class="s-nav-2 right" for="s-3"></label>
+            <label class="s-nav-3 left" for="s-2"></label>
+            <label class="s-nav-3 right" for="s-4"></label>
+            <label class="s-nav-4 left" for="s-3"></label>
+            <label class="s-nav-4 right" for="s-5"></label>
+            <!--  <label class="s-nav-5 left" for="s-4"></label> -->
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="planos" class="layout-planos">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <article class="plano">
-              <h2 class="plano__cabecalho">Pacote 1</h2>
-              <div class="plano__preco">R$ 59/mês</div>
-              <ul class="plano__caracteristicas">
-                <li><strong>2 mãos</strong></li>
-                <li><strong>2 pés</strong></li>
-                <li>Hora marcada</li>
-                <li>Sem fidelidade</li>
-              </ul>
-              <footer class="plano__rodape">
-                <a href="comprar.html" class="botao botao--comprar">Comprar</a>
-              </footer>
-            </article>
-          </div>
+  <div class="layout-depoimento">
+    <div class="container">
+      <div class="depoimento">
+        <blockquote>
+          Estou totalmente satisfeita com os serviço que realizei e continuo
+          realizando no Salão Fernanda Graziella. Indico cegamente!!!
+        </blockquote>
 
-          <div class="col-md-4">
-            <article class="plano">
-              <h2 class="plano__cabecalho">Pacote 2</h2>
-              <div class="plano__preco">R$ 79/mês</div>
-              <ul class="plano__caracteristicas">
-                <li><strong>4 mãos</strong></li>
-                <li><strong>2 pés</strong></li>
-                <li>Hora marcada</li>
-                <li>Sem fidelidade</li>
-              </ul>
-              <footer class="plano__rodape">
-                <a href="comprar.html" class="botao botao--comprar">Comprar</a>
-              </footer>
-            </article>
-          </div>
-
-          <div class="col-md-4">
-            <article class="plano">
-              <h2 class="plano__cabecalho">Pacote 3</h2>
-              <div class="plano__preco">R$ 99/mês</div>
-              <ul class="plano__caracteristicas">
-                <li><strong>4 mãos</strong></li>
-                <li><strong>4 pés</strong></li>
-                <li>Hora marcada</li>
-                <li>Sem fidelidade</li>
-              </ul>
-              <footer class="plano__rodape">
-                <a href="comprar.html" class="botao botao--comprar">Comprar</a>
-              </footer>
-            </article>
-          </div>
+        <div class="depoimento__autor">
+          <img src="imagens/maria-joaquina.jpg" alt="Maria Joaquina" />
+          <p>Maria Joaquina</p>
         </div>
       </div>
     </div>
+  </div>
 
-    <footer class="layout-rodape">
-      <div class="container">
-        <p>&copy Todos os direitos reservados</p>
+  <div id="planos" class="layout-planos">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <article class="plano">
+            <h2 class="plano__cabecalho">Pacote 1</h2>
+            <div class="plano__preco">R$ 59/mês</div>
+            <ul class="plano__caracteristicas">
+              <li><strong>2 mãos</strong></li>
+              <li><strong>2 pés</strong></li>
+              <li>Hora marcada</li>
+              <li>Sem fidelidade</li>
+            </ul>
+            <footer class="plano__rodape">
+              <a href="comprar.html" class="botao botao--comprar">Comprar</a>
+            </footer>
+          </article>
+        </div>
+
+        <div class="col-md-4">
+          <article class="plano plano--mais--popular">
+            <h2 class="plano__cabecalho">Pacote 2</h2>
+            <div class="plano__preco">R$ 79/mês</div>
+            <ul class="plano__caracteristicas">
+              <li><strong>4 mãos</strong></li>
+              <li><strong>2 pés</strong></li>
+              <li>Hora marcada</li>
+              <li>Sem fidelidade</li>
+            </ul>
+            <footer class="plano__rodape">
+              <a href="comprar.html" class="botao botao--comprar">Comprar</a>
+            </footer>
+          </article>
+        </div>
+
+        <div class="col-md-4 ultima-coluna">
+          <article class="plano">
+            <h2 class="plano__cabecalho">Pacote 3</h2>
+            <div class="plano__preco">R$ 99/mês</div>
+            <ul class="plano__caracteristicas">
+              <li><strong>4 mãos</strong></li>
+              <li><strong>4 pés</strong></li>
+              <li>Hora marcada</li>
+              <li>Sem fidelidade</li>
+            </ul>
+            <footer class="plano__rodape">
+              <a href="comprar.html" class="botao botao--comprar">Comprar</a>
+            </footer>
+          </article>
+        </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </div>
+
+  <footer class="layout-rodape">
+    <div class="container">
+      <p>&copy Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script src="javascripts/menu_toggle.js"></script>
+</body>
+
 </html>
